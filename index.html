@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link href="css/style.css" rel="stylesheet">
+<body>
+	<svg id="svg">
+		<g id="chart" transform="translate(100,100)"></g>
+	</svg>
+</body>
+<script src="js/d3.min.js"></script>
+<script src="js/jquery-git2.min.js"></script>
+<script>
+
+	var rect_width = 80;
+	var rect_height = 60;
+	var margin_left = 80;
+	var margin_top = 40;
+	var r = rect_width/20;
+
+	$(document).ready(function(){
+        $.getJSON("http://private-9f3c8-angstrom.apiary-mock.com/system", function (data) {
+        	drawCharts(data);
+        });
+	});
+</script>
+<script src="js/drawCharts.js"></script>
