@@ -1,3 +1,4 @@
+//Drawing Chart
 function drawCharts(data){
     var components = data.Components;
     var connections = data.Connections;
